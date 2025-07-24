@@ -336,7 +336,7 @@ def email_poller():
     while True:
         try:
             check_emails()
-            time.sleep(1)
+            time.sleep(60)
         except Exception as e:
             logger.error(f"خطا در EmailPoller: {str(e)}")
             time.sleep(120)
